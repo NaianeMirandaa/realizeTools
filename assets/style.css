@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Cabin', sans-serif;
+}
+body{
+    background: url(images/backgroundSky.jpg) no-repeat;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    height: max(100vh,900px);
+}
+h1{
+    color: white;
+    text-align: center;
+    font-size: max(1.2rem, 3.2vw);
+    margin: 1rem;
+    width: max(70vw,30px);
+}
+p{
+    color: white;
+    text-align: center;
+    margin: 1rem;
+    line-height: normal;
+    font-size: max(1rem,1.5vw);
+    width: max(65vw,30px);
+}
+a{
+    text-decoration: none;
+    color: #2E375E;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0 2rem 0;
+}
+.presentation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    background-color: white;
+    color: #2E375E;
+    width: 22vw;
+    font-weight: bold;
+    font-size: max(1rem,1.5vw);
+    padding: 1.5rem 3rem;
+    margin: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background: #2E375E;
+    color: white;
+    transition: ease-in-out 0.3s;
+}
+button:hover a{
+    color: white;
+}
+.detalhes{
+    font-size: max(12px,1vw);
+    line-height: normal;
+}
+.detalhes a{
+    color: white;
+    text-decoration: underline;
+}
+
+@media (max-Width: 960px){
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    button{
+        margin: 0.5rem 0;
+        width: 65vw;
+
+    }
+}
